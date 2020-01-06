@@ -31,7 +31,7 @@ import org.apache.http.impl.execchain.*;public class CrossEntropyTest
 
 		for(int i =0;i<prob.length;i++)
 		{
-			result = result = prob[i] * Math.log1p(prob[i]);
+			result = result + prob[i] * Math.log1p(prob[i]);
 		}
 
 		return result;
